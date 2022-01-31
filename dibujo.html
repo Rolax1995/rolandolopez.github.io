@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Dibujando con canvas</title>
+  </head>
+  <body>
+    <fieldset>
+      <h1><FONT size=7 face="arial">Dibujo con canvas</FONT></h1>
+    <fieldset>
+    <legend><FONT face="arial">Datos para el dibujo.</FONT></legend>
+    <p>
+      ¿Cuántas líneas quieres?<br>
+      <input type="text" id="textoLineas"/>
+      <input type="color" value="#ff0000"/ id="colorcito">
+        <fieldset>
+        <form name="dibujoRecargado">
+          <legend>Selecciona las areas a dibujar:</legend>
+          <label>ladoA<label><input type="checkbox" id="A" name="ladoA" value="true" checked></input>
+          <label>ladoB<label><input type="checkbox" id="B" name="ladoB" value="true" checked></input>
+          <label>ladoC<label><input type="checkbox" id="C" name="ladoC" value="true" checked></input>
+          <label>ladoD<label><input type="checkbox" id="D" name="ladoD" value="true" checked></input>
+        </form>
+        </fieldset>
+      <input type="button" value="¡A darle!" id="botoncito"/>
+    </p>
+    </fieldset>
+  </fieldset>
+  <fieldset>
+    <legend><FONT face="courier">Así queda tu dibujo</FONT></legend>
+    <CENTER><canvas id="dibujito" width="300" height="300"></canvas></CENTER>
+    <script src="dibujo.js"></script>
+  </fieldset>
+  </body>
+</html>
